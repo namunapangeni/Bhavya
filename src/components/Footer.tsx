@@ -5,11 +5,6 @@ import Logo from './Logo';
 export default function Footer() {
   return (
     <footer className="mt-auto">
-      <div className="bg-brand-secondary px-4 py-6 text-center sm:px-6">
-        <p className="nepali mx-auto max-w-4xl text-sm leading-relaxed text-white sm:text-base">
-          {INSTITUTE.footerNepali}
-        </p>
-      </div>
       <div className="border-t border-brand-primary/20 bg-brand-secondary px-4 py-8 text-center sm:px-6">
         <Logo className="mx-auto mb-4 h-28 w-auto sm:h-32" />
         <p className="text-xs text-white/70 sm:text-sm">

@@ -1,5 +1,6 @@
-import { MapPin, Phone, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import Logo from '@/components/Logo';
+import ContactForm from '@/components/ContactForm';
 import { INSTITUTE } from '@/data/content';
 
 export default function ContactPage() {
@@ -11,7 +12,7 @@ export default function ContactPage() {
         <p className="nepali mt-2 text-lg font-semibold text-brand-primary">सम्पर्क</p>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-3">
         <div className="rounded-lg border border-brand-accent/20 bg-white p-6 shadow-sm">
           <MapPin className="mb-3 h-8 w-8 text-brand-accent" />
           <h2 className="font-bold text-brand-secondary">Address</h2>
@@ -32,34 +33,49 @@ export default function ContactPage() {
             </a>
           </p>
         </div>
+
+        <div className="rounded-lg border border-brand-gold/30 bg-white p-6 shadow-sm">
+          <Mail className="mb-3 h-8 w-8 text-brand-gold" />
+          <h2 className="font-bold text-brand-secondary">Email</h2>
+          <p className="mt-2 break-all">
+            <a
+              href={`mailto:${INSTITUTE.email}`}
+              className="font-semibold text-brand-secondary hover:text-brand-accent"
+            >
+              {INSTITUTE.email}
+            </a>
+          </p>
+        </div>
       </div>
 
-      <div className="mt-6 rounded-lg border border-brand-accent/15 bg-brand-bg-alt p-6">
-        <Clock className="mb-3 h-8 w-8 text-brand-gold" />
-        <h2 className="font-bold text-brand-secondary">Visit Us</h2>
-        <p className="mt-2 text-brand-secondary/90">{INSTITUTE.boutiqueName}</p>
-        <p className="nepali mt-4 text-sm leading-relaxed text-brand-secondary/80">
-          {INSTITUTE.footerNepali}
-        </p>
+      <div className="mt-8">
+        <ContactForm />
       </div>
 
       <div className="mt-8 overflow-hidden rounded-lg border border-brand-accent/20">
         <iframe
           title="Bhavya Fashion location map"
-          src="https://maps.google.com/maps?q=Butwal-9,+Ittabhatti,+Rupandehi,+Nepal&output=embed"
+          src="https://maps.google.com/maps?q=Kalikanagar,+Butwal-9,+Rupandehi,+Nepal&output=embed"
           className="h-64 w-full border-0 sm:h-80"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
 
-      <div className="mt-8 text-center">
+      <div className="mt-8 flex flex-wrap justify-center gap-4">
         <a
           href={`tel:${INSTITUTE.phone}`}
           className="inline-flex items-center gap-2 rounded-md bg-brand-accent px-8 py-3 text-base font-bold text-white transition hover:bg-brand-accent/90"
         >
           <Phone className="h-5 w-5" />
-          Call Now — {INSTITUTE.phone}
+          Call — {INSTITUTE.phone}
+        </a>
+        <a
+          href={`mailto:${INSTITUTE.email}`}
+          className="inline-flex items-center gap-2 rounded-md border-2 border-brand-primary px-8 py-3 text-base font-bold text-brand-primary transition hover:bg-brand-primary hover:text-white"
+        >
+          <Mail className="h-5 w-5" />
+          Email Us
         </a>
       </div>
     </div>

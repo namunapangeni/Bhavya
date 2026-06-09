@@ -5,9 +5,10 @@ export const INSTITUTE = {
   boutiqueName: 'Bhavya Fashion Boutique and Training Center',
   nepaliName: 'भाव्या',
   tagline: 'BOUTIQUE & TRAINING CENTER',
-  address: 'Butwal-9, Ittabhatti, Rupandehi',
-  addressShort: 'Butwal-9, Rupandehi',
+  address: 'बुटवल 9 कालिकानगर',
+  addressShort: 'बुटवल 9 कालिकानगर',
   phone: '9847026960',
+  email: 'bhavyafashionworldd@gmail.com',
   footerNepali:
     'हामी कहाँ विवाहको लागी दुलहा दुलही सेट ,पास्नी सेट, पार्टी वेर बनाउनुका साथै अर्डर अनुसार सम्पूर्ण ड्रेस तयार गरिन्छ ।',
 } as const;

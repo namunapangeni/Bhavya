@@ -4,7 +4,7 @@ const GALLERY_IMAGES = [
   {
     src: '/assets/gallery-logo.jpg',
     alt: 'Bhavya Fashion Boutique and Training Center logo with garments',
-    caption: 'Bhavya Fashion Boutique and Training Center — Butwal-9, Rupandehi',
+    caption: 'Bhavya Fashion Boutique and Training Center — बुटवल 9 कालिकानगर',
   },
   {
     src: '/assets/curriculum.jpg',
