@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
 import { INSTITUTE } from '@/data/content';
 import Logo from './Logo';
+import SocialLinks from './SocialLinks';
 
 export default function Footer() {
   return (
     <footer className="mt-auto">
       <div className="border-t border-brand-primary/20 bg-brand-secondary px-4 py-8 text-center sm:px-6">
         <Logo className="mx-auto mb-4 h-28 w-auto sm:h-32" />
+        <SocialLinks
+          className="mx-auto mb-4 text-white hover:text-brand-gold"
+          iconClassName="h-7 w-7"
+          showLabel
+        />
         <p className="text-xs text-white/70 sm:text-sm">
           © {new Date().getFullYear()}{' '}
           <span className="font-semibold text-white">{INSTITUTE.boutiqueName}</span>

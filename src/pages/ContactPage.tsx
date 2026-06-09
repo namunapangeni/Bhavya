@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail } from 'lucide-react';
 import Logo from '@/components/Logo';
 import ContactForm from '@/components/ContactForm';
+import SocialLinks from '@/components/SocialLinks';
 import { INSTITUTE } from '@/data/content';
 
 export default function ContactPage() {
@@ -77,6 +78,11 @@ export default function ContactPage() {
           <Mail className="h-5 w-5" />
           Email Us
         </a>
+        <SocialLinks
+          className="rounded-md border-2 border-brand-secondary px-8 py-3 text-base font-bold text-brand-secondary transition hover:bg-brand-secondary hover:text-white"
+          iconClassName="h-5 w-5"
+          showLabel
+        />
       </div>
     </div>
   );

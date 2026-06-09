@@ -9,6 +9,7 @@ export const INSTITUTE = {
   addressShort: 'बुटवल 9 कालिकानगर',
   phone: '9847026960',
   email: 'bhavyafashionworldd@gmail.com',
+  tiktok: 'https://www.tiktok.com/@bhavyafashion',
   footerNepali:
     'हामी कहाँ विवाहको लागी दुलहा दुलही सेट ,पास्नी सेट, पार्टी वेर बनाउनुका साथै अर्डर अनुसार सम्पूर्ण ड्रेस तयार गरिन्छ ।',
 } as const;
