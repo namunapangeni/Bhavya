@@ -36,6 +36,17 @@ export default function Footer() {
             Admission
           </Link>
         </p>
+        <p className="mt-4 text-xs text-white/40">
+          Developed by{' '}
+          <a
+            href="https://www.namunapangeni.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/60 transition hover:text-brand-gold hover:underline"
+          >
+            Namuna Pangeni
+          </a>
+        </p>
       </div>
     </footer>
   );
