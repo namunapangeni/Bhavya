@@ -1,0 +1,41 @@
+import { Link } from 'react-router-dom';
+import { INSTITUTE } from '@/data/content';
+import Logo from './Logo';
+
+export default function Footer() {
+  return (
+    <footer className="mt-auto">
+      <div className="bg-brand-secondary px-4 py-6 text-center sm:px-6">
+        <p className="nepali mx-auto max-w-4xl text-sm leading-relaxed text-white sm:text-base">
+          {INSTITUTE.footerNepali}
+        </p>
+      </div>
+      <div className="border-t border-brand-primary/20 bg-brand-secondary px-4 py-8 text-center sm:px-6">
+        <Logo className="mx-auto mb-4 h-28 w-auto sm:h-32" />
+        <p className="text-xs text-white/70 sm:text-sm">
+          © {new Date().getFullYear()}{' '}
+          <span className="font-semibold text-white">{INSTITUTE.boutiqueName}</span>
+          {' · '}
+          {INSTITUTE.addressShort}
+          {' · '}
+          <a href={`tel:${INSTITUTE.phone}`} className="text-brand-gold hover:underline">
+            PH: {INSTITUTE.phone}
+          </a>
+        </p>
+        <p className="mt-2 text-xs text-white/60 sm:text-sm">
+          <Link to="/courses" className="hover:text-brand-gold">
+            Courses
+          </Link>
+          {' · '}
+          <Link to="/contact" className="hover:text-brand-gold">
+            Contact
+          </Link>
+          {' · '}
+          <Link to="/admission" className="hover:text-brand-gold">
+            Admission
+          </Link>
+        </p>
+      </div>
+    </footer>
+  );
+}

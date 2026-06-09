@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/*
+  Brand palette extracted from the official Bhavya Fashion logo:
+  - Primary: muted teal/slate blue (भाव्या, Fashion script)
+  - Secondary: dark navy/charcoal (silhouette, footer bars)
+  - Accent: warm bronze/copper (sub-text, frame)
+  - Gold: crown & circular frame highlights
+  - Background: off-white/cream (logo canvas)
+  - Muted: dusty rose (floral accents)
+*/
+@theme {
+  --font-sans: "Inter", "Noto Sans Devanagari", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Great Vibes", cursive;
+
+  --color-brand-primary: #5f7d8e;
+  --color-brand-secondary: #2c3e50;
+  --color-brand-accent: #a67c52;
+  --color-brand-gold: #c9a962;
+  --color-brand-bg: #fdf9f3;
+  --color-brand-bg-alt: #f5efe6;
+  --color-brand-muted: #d291bc;
+  --color-brand-sage: #7a9b8e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-secondary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.nepali {
+  font-family: "Noto Sans Devanagari", var(--font-sans);
+}
+
+.font-fashion {
+  font-family: var(--font-script);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
